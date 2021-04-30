@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+		/>
+
+		<link rel="icon" href="" />
+		<link rel="stylesheet" href="/style.css" />
+		<!-- fontawsome icons -->
+		<script
+			src="https://kit.fontawesome.com/cf95b8edbb.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Collab</title>
+	</head>
+
+	<body>
+		<div class="mob-nav" id="mob-nav">
+			<div class="mob-nav-header">
+				<img class="logo" src="/img/Collab.png" alt="logo" />
+				<div class="close-menu" onclick="toggleNav()">
+					<button>
+						<i class="fas fa-times"></i>
+					</button>
+				</div>
+			</div>
+			<div class="test">
+				<a class="mob-nav-item mob-nav-active" href="#">Home</a>
+				<a class="mob-nav-item" href="#">About</a>
+				<a class="mob-nav-item" href="#">Services</a>
+				<a class="mob-nav-item" href="#">Contact</a>
+				<a class="mob-nav-item" href="#">About</a>
+			</div>
+		</div>
+		<div id="container">
+			<header>
+				<div class="header-logo">
+					<img class="logo" src="/img/Collab.png" alt="logo" />
+				</div>
+				<!-- <a class="logo" href="#">Collab.</a> -->
+				<nav class="nav">
+					<a class="nav-item nav-active" href="#">Home</a>
+					<a class="nav-item" href="#">About</a>
+					<a class="nav-item" href="#">Services</a>
+					<a class="nav-item" href="#">Contact</a>
+					<a class="nav-item" href="#">About</a>
+				</nav>
+				<div class="nav-menu" onclick="toggleNav()">
+					<button>
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+				<button class="nav-button">Get Started</button>
+			</header>
+
+			<main>
+				<div class="hero-cont">
+					<h1 class="hero-h1">Collaborate Like Never Before</h1>
+					<p class="hero-p">
+						Proin consequat eros in dolor rhoncus, in pellentesque justo
+						feugiat. Nunc nec porttitor sapien, vel congue diam.
+					</p>
+					<button class="hero-button">
+						<i class="fas fa-play-circle"></i>
+						Discover Video
+					</button>
+				</div>
+				<div class="img-cont">
+					<img class="main-img" src="/img/data-x1.png" alt="main-img" />
+				</div>
+			</main>
+			<footer>
+				<div class="social">
+					<a href="#" class="footer-icon">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" class="footer-icon">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#" class="footer-icon">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+				<span>Nova Gh.</span>
+			</footer>
+			<script>
+				function toggleNav() {
+					var element = document.getElementById("mob-nav");
+					if (element.classList.contains("mob-nav-open")) {
+						element.classList.remove("mob-nav-open");
+					} else {
+						element.classList.add("mob-nav-open");
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>
